@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		BE209C221B2D48C100161783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C211B2D48C100161783 /* main.m */; };
 		BE209C251B2D48C100161783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C241B2D48C100161783 /* AppDelegate.m */; };
-		BE209C281B2D48C100161783 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C271B2D48C100161783 /* FirstViewController.m */; };
-		BE209C2B1B2D48C100161783 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C2A1B2D48C100161783 /* SecondViewController.m */; };
 		BE209C2E1B2D48C100161783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE209C2C1B2D48C100161783 /* Main.storyboard */; };
 		BE209C301B2D48C100161783 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE209C2F1B2D48C100161783 /* Images.xcassets */; };
 		BE209C331B2D48C100161783 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C311B2D48C100161783 /* LaunchScreen.xib */; };
 		BE209C3F1B2D48C100161783 /* ZhiHuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C3E1B2D48C100161783 /* ZhiHuTests.m */; };
+		BE209C4B1B2D4B9D00161783 /* TopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C4A1B2D4B9D00161783 /* TopicViewController.m */; };
+		BE209C4E1B2D4BB800161783 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C4D1B2D4BB800161783 /* DiscoverViewController.m */; };
+		BE209C511B2D4BC800161783 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C501B2D4BC800161783 /* NewsViewController.m */; };
+		BE209C571B2D4C4400161783 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C561B2D4C4400161783 /* TabBarController.m */; };
+		BE209C5A1B2D4C6700161783 /* SelfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C591B2D4C6700161783 /* SelfViewController.m */; };
+		BE209C5F1B2D4D1600161783 /* TopicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C5D1B2D4D1600161783 /* TopicTableViewCell.m */; };
+		BE209C601B2D4D1600161783 /* TopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C5E1B2D4D1600161783 /* TopicTableViewCell.xib */; };
+		BE209C641B2D7EA000161783 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C631B2D7EA000161783 /* Question.m */; };
+		BE209C671B2D95EC00161783 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C661B2D95EC00161783 /* User.m */; };
+		BE209C6A1B2D95FA00161783 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C691B2D95FA00161783 /* Answer.m */; };
+		BE209C6E1B2D9B1700161783 /* DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C6C1B2D9B1700161783 /* DiscoverTableViewCell.m */; };
+		BE209C6F1B2D9B1700161783 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */; };
+		BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C711B2D9FB000161783 /* NewsTableViewCell.m */; };
+		BE209C741B2D9FB000161783 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +45,37 @@
 		BE209C211B2D48C100161783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE209C231B2D48C100161783 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE209C241B2D48C100161783 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE209C261B2D48C100161783 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BE209C271B2D48C100161783 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BE209C291B2D48C100161783 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BE209C2A1B2D48C100161783 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BE209C2D1B2D48C100161783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE209C2F1B2D48C100161783 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE209C321B2D48C100161783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BE209C381B2D48C100161783 /* ZhiHuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhiHuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE209C3D1B2D48C100161783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE209C3E1B2D48C100161783 /* ZhiHuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiHuTests.m; sourceTree = "<group>"; };
+		BE209C491B2D4B9D00161783 /* TopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicViewController.h; path = class/TopicViewController.h; sourceTree = "<group>"; };
+		BE209C4A1B2D4B9D00161783 /* TopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicViewController.m; path = class/TopicViewController.m; sourceTree = "<group>"; };
+		BE209C4C1B2D4BB800161783 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverViewController.h; path = class/DiscoverViewController.h; sourceTree = "<group>"; };
+		BE209C4D1B2D4BB800161783 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverViewController.m; path = class/DiscoverViewController.m; sourceTree = "<group>"; };
+		BE209C4F1B2D4BC800161783 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsViewController.h; path = class/NewsViewController.h; sourceTree = "<group>"; };
+		BE209C501B2D4BC800161783 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsViewController.m; path = class/NewsViewController.m; sourceTree = "<group>"; };
+		BE209C551B2D4C4400161783 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = class/TabBarController.h; sourceTree = "<group>"; };
+		BE209C561B2D4C4400161783 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = class/TabBarController.m; sourceTree = "<group>"; };
+		BE209C581B2D4C6700161783 /* SelfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelfViewController.h; path = class/SelfViewController.h; sourceTree = "<group>"; };
+		BE209C591B2D4C6700161783 /* SelfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelfViewController.m; path = class/SelfViewController.m; sourceTree = "<group>"; };
+		BE209C5C1B2D4D1600161783 /* TopicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicTableViewCell.h; path = class/TopicTableViewCell.h; sourceTree = "<group>"; };
+		BE209C5D1B2D4D1600161783 /* TopicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicTableViewCell.m; path = class/TopicTableViewCell.m; sourceTree = "<group>"; };
+		BE209C5E1B2D4D1600161783 /* TopicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TopicTableViewCell.xib; path = class/TopicTableViewCell.xib; sourceTree = "<group>"; };
+		BE209C621B2D7EA000161783 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = class/Question.h; sourceTree = "<group>"; };
+		BE209C631B2D7EA000161783 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Question.m; path = class/Question.m; sourceTree = "<group>"; };
+		BE209C651B2D95EC00161783 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = class/User.h; sourceTree = "<group>"; };
+		BE209C661B2D95EC00161783 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = class/User.m; sourceTree = "<group>"; };
+		BE209C681B2D95FA00161783 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Answer.h; path = class/Answer.h; sourceTree = "<group>"; };
+		BE209C691B2D95FA00161783 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Answer.m; path = class/Answer.m; sourceTree = "<group>"; };
+		BE209C6B1B2D9B1700161783 /* DiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverTableViewCell.h; path = class/DiscoverTableViewCell.h; sourceTree = "<group>"; };
+		BE209C6C1B2D9B1700161783 /* DiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverTableViewCell.m; path = class/DiscoverTableViewCell.m; sourceTree = "<group>"; };
+		BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DiscoverTableViewCell.xib; path = class/DiscoverTableViewCell.xib; sourceTree = "<group>"; };
+		BE209C701B2D9FB000161783 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsTableViewCell.h; path = class/NewsTableViewCell.h; sourceTree = "<group>"; };
+		BE209C711B2D9FB000161783 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsTableViewCell.m; path = class/NewsTableViewCell.m; sourceTree = "<group>"; };
+		BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = class/NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +99,9 @@
 		BE209C131B2D48C100161783 = {
 			isa = PBXGroup;
 			children = (
+				BE209C5B1B2D4CEB00161783 /* VIewCell */,
+				BE209C481B2D4B7100161783 /* TopViewController */,
+				BE209C611B2D7E7A00161783 /* model */,
 				BE209C1E1B2D48C100161783 /* ZhiHu */,
 				BE209C3B1B2D48C100161783 /* ZhiHuTests */,
 				BE209C1D1B2D48C100161783 /* Products */,
@@ -86,10 +122,6 @@
 			children = (
 				BE209C231B2D48C100161783 /* AppDelegate.h */,
 				BE209C241B2D48C100161783 /* AppDelegate.m */,
-				BE209C261B2D48C100161783 /* FirstViewController.h */,
-				BE209C271B2D48C100161783 /* FirstViewController.m */,
-				BE209C291B2D48C100161783 /* SecondViewController.h */,
-				BE209C2A1B2D48C100161783 /* SecondViewController.m */,
 				BE209C2C1B2D48C100161783 /* Main.storyboard */,
 				BE209C2F1B2D48C100161783 /* Images.xcassets */,
 				BE209C311B2D48C100161783 /* LaunchScreen.xib */,
@@ -122,6 +154,52 @@
 				BE209C3D1B2D48C100161783 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE209C481B2D4B7100161783 /* TopViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BE209C491B2D4B9D00161783 /* TopicViewController.h */,
+				BE209C4A1B2D4B9D00161783 /* TopicViewController.m */,
+				BE209C4C1B2D4BB800161783 /* DiscoverViewController.h */,
+				BE209C4D1B2D4BB800161783 /* DiscoverViewController.m */,
+				BE209C4F1B2D4BC800161783 /* NewsViewController.h */,
+				BE209C501B2D4BC800161783 /* NewsViewController.m */,
+				BE209C581B2D4C6700161783 /* SelfViewController.h */,
+				BE209C591B2D4C6700161783 /* SelfViewController.m */,
+				BE209C551B2D4C4400161783 /* TabBarController.h */,
+				BE209C561B2D4C4400161783 /* TabBarController.m */,
+			);
+			name = TopViewController;
+			sourceTree = "<group>";
+		};
+		BE209C5B1B2D4CEB00161783 /* VIewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE209C5C1B2D4D1600161783 /* TopicTableViewCell.h */,
+				BE209C5D1B2D4D1600161783 /* TopicTableViewCell.m */,
+				BE209C5E1B2D4D1600161783 /* TopicTableViewCell.xib */,
+				BE209C6B1B2D9B1700161783 /* DiscoverTableViewCell.h */,
+				BE209C6C1B2D9B1700161783 /* DiscoverTableViewCell.m */,
+				BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */,
+				BE209C701B2D9FB000161783 /* NewsTableViewCell.h */,
+				BE209C711B2D9FB000161783 /* NewsTableViewCell.m */,
+				BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */,
+			);
+			name = VIewCell;
+			sourceTree = "<group>";
+		};
+		BE209C611B2D7E7A00161783 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BE209C621B2D7EA000161783 /* Question.h */,
+				BE209C631B2D7EA000161783 /* Question.m */,
+				BE209C651B2D95EC00161783 /* User.h */,
+				BE209C661B2D95EC00161783 /* User.m */,
+				BE209C681B2D95FA00161783 /* Answer.h */,
+				BE209C691B2D95FA00161783 /* Answer.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +282,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE209C6F1B2D9B1700161783 /* DiscoverTableViewCell.xib in Resources */,
 				BE209C2E1B2D48C100161783 /* Main.storyboard in Resources */,
+				BE209C601B2D4D1600161783 /* TopicTableViewCell.xib in Resources */,
 				BE209C331B2D48C100161783 /* LaunchScreen.xib in Resources */,
+				BE209C741B2D9FB000161783 /* NewsTableViewCell.xib in Resources */,
 				BE209C301B2D48C100161783 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE209C2B1B2D48C100161783 /* SecondViewController.m in Sources */,
+				BE209C6E1B2D9B1700161783 /* DiscoverTableViewCell.m in Sources */,
+				BE209C671B2D95EC00161783 /* User.m in Sources */,
+				BE209C571B2D4C4400161783 /* TabBarController.m in Sources */,
+				BE209C5F1B2D4D1600161783 /* TopicTableViewCell.m in Sources */,
+				BE209C5A1B2D4C6700161783 /* SelfViewController.m in Sources */,
 				BE209C251B2D48C100161783 /* AppDelegate.m in Sources */,
-				BE209C281B2D48C100161783 /* FirstViewController.m in Sources */,
+				BE209C4E1B2D4BB800161783 /* DiscoverViewController.m in Sources */,
+				BE209C6A1B2D95FA00161783 /* Answer.m in Sources */,
+				BE209C511B2D4BC800161783 /* NewsViewController.m in Sources */,
+				BE209C641B2D7EA000161783 /* Question.m in Sources */,
 				BE209C221B2D48C100161783 /* main.m in Sources */,
+				BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */,
+				BE209C4B1B2D4B9D00161783 /* TopicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

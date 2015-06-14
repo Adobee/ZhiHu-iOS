@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  SelfViewController.h
 //  ZhiHu
 //
 //  Created by 严润发 on 15/6/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface SelfViewController : UIViewController
 
 @end
-
