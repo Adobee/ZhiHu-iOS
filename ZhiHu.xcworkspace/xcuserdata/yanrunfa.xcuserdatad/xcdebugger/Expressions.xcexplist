@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__37-[TopicTableViewCell getImageFromURL]_block_invoke26:TopicTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TopicTableViewCell getImageFromURL]:TopicTableViewCell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImage *)image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[TopicViewController initData]_block_invoke30:TopicViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TopicViewController receiveData:]:TopicViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__31-[TopicViewController initData]_block_invoke22:TopicViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TopicTableViewCell initUIFromTopic:]:TopicTableViewCell.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TopicViewController tableView:willDisplayCell:forRowAtIndexPath:]:TopicViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

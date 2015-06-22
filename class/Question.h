@@ -15,8 +15,13 @@
 
 @property NSString *QuestionText;
 
+@property NSString *QuestionURL;
+
 @property User *Asker;
 
 @property NSDictionary *Answers;
+
+
+-(Question *)initWithTitle:(NSString *)title andURL:(NSString *)url;
 
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyTopic.h"
+#import "Question.h"
 
 @interface TopicTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIButton *TopicImageVIew;
+@property (weak, nonatomic) IBOutlet UIImageView *TopicImageView;
 
 @property (weak, nonatomic) IBOutlet UIButton *TopicButton;
 
@@ -20,4 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *NewsThreeButton;
 
+@property MyTopic *topic;
+
+-(void)initUIFromTopic:(MyTopic *)topic;
 @end

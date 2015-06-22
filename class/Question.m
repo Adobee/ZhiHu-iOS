@@ -10,4 +10,12 @@
 
 @implementation Question
 
+-(Question *)initWithTitle:(NSString *)title andURL:(NSString *)url{
+    if (self=[super init]) {
+        _QuestionTitle=title;
+        _QuestionURL=url;
+    }
+    return self;
+}
+
 @end

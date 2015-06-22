@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5613DB5A8CA4EA6A6A8030E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B79B41F226C9C9DE28B0963B /* libPods.a */; };
 		BE209C221B2D48C100161783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C211B2D48C100161783 /* main.m */; };
 		BE209C251B2D48C100161783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C241B2D48C100161783 /* AppDelegate.m */; };
 		BE209C2E1B2D48C100161783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE209C2C1B2D48C100161783 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		BE209C6F1B2D9B1700161783 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */; };
 		BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C711B2D9FB000161783 /* NewsTableViewCell.m */; };
 		BE209C741B2D9FB000161783 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */; };
+		BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC59C501B3478C100EDA61F /* MyTopic.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		050EECA44E0BA064B3332FE7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B79B41F226C9C9DE28B0963B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE209C1C1B2D48C100161783 /* ZhiHu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiHu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE209C201B2D48C100161783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE209C211B2D48C100161783 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +80,10 @@
 		BE209C701B2D9FB000161783 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsTableViewCell.h; path = class/NewsTableViewCell.h; sourceTree = "<group>"; };
 		BE209C711B2D9FB000161783 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsTableViewCell.m; path = class/NewsTableViewCell.m; sourceTree = "<group>"; };
 		BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = class/NewsTableViewCell.xib; sourceTree = "<group>"; };
+		BEC59C4E1B344D0100EDA61F /* conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		BEC59C4F1B3478C100EDA61F /* MyTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTopic.h; path = class/MyTopic.h; sourceTree = "<group>"; };
+		BEC59C501B3478C100EDA61F /* MyTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTopic.m; path = class/MyTopic.m; sourceTree = "<group>"; };
+		FDAEDE96F4CAF2956F0A64E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5613DB5A8CA4EA6A6A8030E9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C73952018B9931CFCA66CA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				050EECA44E0BA064B3332FE7 /* Pods.debug.xcconfig */,
+				FDAEDE96F4CAF2956F0A64E0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88B4600BC60E7DDD185BE276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79B41F226C9C9DE28B0963B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BE209C131B2D48C100161783 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +131,8 @@
 				BE209C1E1B2D48C100161783 /* ZhiHu */,
 				BE209C3B1B2D48C100161783 /* ZhiHuTests */,
 				BE209C1D1B2D48C100161783 /* Products */,
+				7C73952018B9931CFCA66CA0 /* Pods */,
+				88B4600BC60E7DDD185BE276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +154,7 @@
 				BE209C2F1B2D48C100161783 /* Images.xcassets */,
 				BE209C311B2D48C100161783 /* LaunchScreen.xib */,
 				BE209C1F1B2D48C100161783 /* Supporting Files */,
+				BEC59C4E1B344D0100EDA61F /* conf.h */,
 			);
 			path = ZhiHu;
 			sourceTree = "<group>";
@@ -198,6 +227,8 @@
 				BE209C661B2D95EC00161783 /* User.m */,
 				BE209C681B2D95FA00161783 /* Answer.h */,
 				BE209C691B2D95FA00161783 /* Answer.m */,
+				BEC59C4F1B3478C100EDA61F /* MyTopic.h */,
+				BEC59C501B3478C100EDA61F /* MyTopic.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -209,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE209C421B2D48C100161783 /* Build configuration list for PBXNativeTarget "ZhiHu" */;
 			buildPhases = (
+				1B9FA7A7974432C1D178BB67 /* Check Pods Manifest.lock */,
 				BE209C181B2D48C100161783 /* Sources */,
 				BE209C191B2D48C100161783 /* Frameworks */,
 				BE209C1A1B2D48C100161783 /* Resources */,
+				734B57B85CE6983AAD7A5D88 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +333,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B9FA7A7974432C1D178BB67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		734B57B85CE6983AAD7A5D88 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE209C181B2D48C100161783 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +382,7 @@
 				BE209C511B2D4BC800161783 /* NewsViewController.m in Sources */,
 				BE209C641B2D7EA000161783 /* Question.m in Sources */,
 				BE209C221B2D48C100161783 /* main.m in Sources */,
+				BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */,
 				BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */,
 				BE209C4B1B2D4B9D00161783 /* TopicViewController.m in Sources */,
 			);
@@ -441,8 +508,10 @@
 		};
 		BE209C431B2D48C100161783 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050EECA44E0BA064B3332FE7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				INFOPLIST_FILE = ZhiHu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,8 +520,10 @@
 		};
 		BE209C441B2D48C100161783 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDAEDE96F4CAF2956F0A64E0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				INFOPLIST_FILE = ZhiHu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,6 +583,7 @@
 				BE209C441B2D48C100161783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE209C451B2D48C100161783 /* Build configuration list for PBXNativeTarget "ZhiHuTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +592,7 @@
 				BE209C471B2D48C100161783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
