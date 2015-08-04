@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JSONKit (1.4)
+  - RegExCategories (1.0)
 
 DEPENDENCIES:
   - AFNetworking
   - JSONKit
+  - RegExCategories
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
+  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

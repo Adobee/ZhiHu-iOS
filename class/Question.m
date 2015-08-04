@@ -12,8 +12,8 @@
 
 -(Question *)initWithTitle:(NSString *)title andURL:(NSString *)url{
     if (self=[super init]) {
-        _QuestionTitle=title;
-        _QuestionURL=url;
+        _QuestionTitle = title;
+        _QuestionURL   = [@"http://www.zhihu.com" stringByAppendingString:url];
     }
     return self;
 }

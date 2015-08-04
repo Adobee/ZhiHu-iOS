@@ -13,13 +13,15 @@
 
 -(MyTopic *)initWithTitle:(NSString *)title andURL:(NSString *)url andImage:(NSString *)imageUrl{
     if (self=[super init]) {
-        _NewQuestions=[[NSMutableArray alloc]init];
-        _TopicTitle=title;
-        _TopicURL=url;
-        _TopicImageURL=imageUrl;
+        _NewQuestions  = [[NSMutableArray alloc]init];
+        _TopicTitle    = title;
+        _TopicImageURL = imageUrl;
+        _TopicURL      = [@"www.zhihu.com" stringByAppendingString:url];
     }
     return self;
 }
+
+
 
 -(void)addQuestion:(Question *)question{
     [_NewQuestions addObject:question];

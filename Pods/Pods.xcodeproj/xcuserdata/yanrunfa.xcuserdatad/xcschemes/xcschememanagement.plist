@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JSONKit.xcscheme</key>
+		<key>JSONKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,20 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RegExCategories.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>06195C636960B3BA0396D980</key>
+		<key>4B095F0189B2FAF41FE3DBC59FCB228B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>815F33730710901B60AA9203</key>
+		<key>96A52EA079E7B8A9BAD676750DFAE784</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F50E0BD79C8A3A93D6116D88</key>
+		<key>B2FCD25FC6BD6565532C9829336CF989</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3977CCFF584C38A1836D1A9D823D272</key>
 		<dict>
 			<key>primary</key>
 			<true/>

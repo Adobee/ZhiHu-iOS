@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
+#import "TabBarController.h"
+@interface AppDelegate (){
+    //UINavigationController *nav;
+}
 
 @end
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //TabBarController *tabBarController=[[TabBarController alloc]init];
+    //nav=[[UINavigationController alloc]initWithRootViewController:tabBarController];
+    //self.window.rootViewController=nav;
+    //[self.window makeKeyAndVisible];
+    
     return YES;
 }
 

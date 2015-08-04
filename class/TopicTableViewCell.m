@@ -14,6 +14,7 @@
 - (void)awakeFromNib {
 }
 
+
 -(void)initUIFromTopic:(MyTopic *)topic{
     _topic=topic;
     [_TopicButton setTitle:_topic.TopicTitle forState:UIControlStateNormal];
@@ -40,6 +41,7 @@
     [self getImageFromURL];
 }
 
+//下载话题图片
 -(void)getImageFromURL{
     /*
     AFHTTPRequestOperationManager *manager=[AFHTTPRequestOperationManager manager];

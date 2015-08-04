@@ -9,6 +9,8 @@
 #ifndef ZhiHu_conf_h
 #define ZhiHu_conf_h
 
-#define url_topic @"http://127.0.0.1:8000/topic"
+#define url_login @"http://www.zhihu.com/login/email"
+#define url_topic @"http://www.zhihu.com/topic"
+#define url_explore @"http://www.zhihu.com/explore"
 
 #endif

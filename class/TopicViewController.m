@@ -8,10 +8,9 @@
 
 #import "TopicViewController.h"
 #import "TopicTableViewCell.h"
+#import "LoginViewController.h"
 #import "AFNetworking.h"
-#import "JSONKit.h"
-#import "MyTopic.h"
-#import "Question.h"
+#import "HTMLAnalyzer.h"
 @interface TopicViewController ()
 
 @end
@@ -39,6 +38,17 @@
 }
 
 -(void)receiveData:(NSData *)data{
+    NSString *revevieData=[[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    if ([revevieData rangeOfString:@"<input id=\"captcha\" name=\"captcha\" placeholder=\"验证码\" required>"].length>0) {
+        [self performSegueWithIdentifier:@"LoginSegue" sender:self];
+    }
+    else{
+        NSLog(@"%@",revevieData);
+        topics=[HTMLAnalyzer TopicsAnalysis:revevieData];
+        [self initUI];
+    }
+    
+    /*
     NSArray *array=(NSArray *)data;
     for (int i=0; i<array.count; i++) {
         MyTopic *topic=[[MyTopic alloc]initWithTitle:array[i][0] andURL:array[i][1] andImage:array[i][2]];
@@ -49,13 +59,15 @@
         }
         [topics addObject:topic];
     }
-    [self initUI];
+     */
 }
+
+
 
 -(void)initData{
     AFHTTPRequestOperationManager *manager=[AFHTTPRequestOperationManager manager];
-    manager.requestSerializer=[AFJSONRequestSerializer serializer];
-    manager.responseSerializer=[AFJSONResponseSerializer serializer];
+    manager.requestSerializer=[AFHTTPRequestSerializer serializer];
+    manager.responseSerializer=[AFHTTPResponseSerializer serializer];
     [manager GET:url_topic parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self performSelectorOnMainThread:@selector(receiveData:) withObject:responseObject waitUntilDone:YES];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -64,6 +76,8 @@
         [alert show];
     }];
 }
+
+
 #pragma mark -Delegate
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -83,5 +97,13 @@
     [cell initUIFromTopic:[topics objectAtIndex:indexPath.row]];
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"LoginSegue"]) {
+        LoginViewController *loginViewController=segue.destinationViewController;
+        loginViewController.reloadData=^(){
+            [self initData];
+        };
+    }
+}
 
 @end

@@ -28,7 +28,13 @@
 		BE209C6F1B2D9B1700161783 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */; };
 		BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C711B2D9FB000161783 /* NewsTableViewCell.m */; };
 		BE209C741B2D9FB000161783 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */; };
+		BE3DD81A1B6F76F6007E1221 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DD8191B6F76F6007E1221 /* LoginViewController.m */; };
+		BEA0AD0E1B705C9600DFA2F1 /* HTMLAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */; };
 		BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC59C501B3478C100EDA61F /* MyTopic.m */; };
+		BEF13C6D1B70AEC40092892F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF13C6A1B70AEC40092892F /* HTMLNode.m */; };
+		BEF13C6E1B70AEC40092892F /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF13C6C1B70AEC40092892F /* HTMLParser.m */; };
+		BEF13C701B70B0D60092892F /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF13C6F1B70B0D60092892F /* libxml2.2.dylib */; };
+		BEF13C721B70B0ED0092892F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF13C711B70B0ED0092892F /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,9 +86,19 @@
 		BE209C701B2D9FB000161783 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsTableViewCell.h; path = class/NewsTableViewCell.h; sourceTree = "<group>"; };
 		BE209C711B2D9FB000161783 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsTableViewCell.m; path = class/NewsTableViewCell.m; sourceTree = "<group>"; };
 		BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = class/NewsTableViewCell.xib; sourceTree = "<group>"; };
+		BE3DD8181B6F76F6007E1221 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = class/LoginViewController.h; sourceTree = "<group>"; };
+		BE3DD8191B6F76F6007E1221 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = class/LoginViewController.m; sourceTree = "<group>"; };
+		BEA0AD0C1B705C9600DFA2F1 /* HTMLAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLAnalyzer.h; path = class/HTMLAnalyzer.h; sourceTree = "<group>"; };
+		BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLAnalyzer.m; path = class/HTMLAnalyzer.m; sourceTree = "<group>"; };
 		BEC59C4E1B344D0100EDA61F /* conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
 		BEC59C4F1B3478C100EDA61F /* MyTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTopic.h; path = class/MyTopic.h; sourceTree = "<group>"; };
 		BEC59C501B3478C100EDA61F /* MyTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTopic.m; path = class/MyTopic.m; sourceTree = "<group>"; };
+		BEF13C691B70AEC40092892F /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLNode.h; path = "Objective-C-HMTL-Parser/HTMLNode.h"; sourceTree = SOURCE_ROOT; };
+		BEF13C6A1B70AEC40092892F /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLNode.m; path = "Objective-C-HMTL-Parser/HTMLNode.m"; sourceTree = SOURCE_ROOT; };
+		BEF13C6B1B70AEC40092892F /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLParser.h; path = "Objective-C-HMTL-Parser/HTMLParser.h"; sourceTree = SOURCE_ROOT; };
+		BEF13C6C1B70AEC40092892F /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLParser.m; path = "Objective-C-HMTL-Parser/HTMLParser.m"; sourceTree = SOURCE_ROOT; };
+		BEF13C6F1B70B0D60092892F /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		BEF13C711B70B0ED0092892F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		FDAEDE96F4CAF2956F0A64E0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF13C721B70B0ED0092892F /* libxml2.dylib in Frameworks */,
+				BEF13C701B70B0D60092892F /* libxml2.2.dylib in Frameworks */,
 				5613DB5A8CA4EA6A6A8030E9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +135,8 @@
 		88B4600BC60E7DDD185BE276 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEF13C711B70B0ED0092892F /* libxml2.dylib */,
+				BEF13C6F1B70B0D60092892F /* libxml2.2.dylib */,
 				B79B41F226C9C9DE28B0963B /* libPods.a */,
 			);
 			name = Frameworks;
@@ -128,6 +148,7 @@
 				BE209C5B1B2D4CEB00161783 /* VIewCell */,
 				BE209C481B2D4B7100161783 /* TopViewController */,
 				BE209C611B2D7E7A00161783 /* model */,
+				BEF13C651B7096100092892F /* 3rd */,
 				BE209C1E1B2D48C100161783 /* ZhiHu */,
 				BE209C3B1B2D48C100161783 /* ZhiHuTests */,
 				BE209C1D1B2D48C100161783 /* Products */,
@@ -198,6 +219,8 @@
 				BE209C591B2D4C6700161783 /* SelfViewController.m */,
 				BE209C551B2D4C4400161783 /* TabBarController.h */,
 				BE209C561B2D4C4400161783 /* TabBarController.m */,
+				BE3DD8181B6F76F6007E1221 /* LoginViewController.h */,
+				BE3DD8191B6F76F6007E1221 /* LoginViewController.m */,
 			);
 			name = TopViewController;
 			sourceTree = "<group>";
@@ -229,8 +252,30 @@
 				BE209C691B2D95FA00161783 /* Answer.m */,
 				BEC59C4F1B3478C100EDA61F /* MyTopic.h */,
 				BEC59C501B3478C100EDA61F /* MyTopic.m */,
+				BEA0AD0C1B705C9600DFA2F1 /* HTMLAnalyzer.h */,
+				BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		BEF13C651B7096100092892F /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				BEF13C681B70AEA80092892F /* HTMLParser */,
+			);
+			name = 3rd;
+			path = ZhiHu;
+			sourceTree = "<group>";
+		};
+		BEF13C681B70AEA80092892F /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				BEF13C691B70AEC40092892F /* HTMLNode.h */,
+				BEF13C6A1B70AEC40092892F /* HTMLNode.m */,
+				BEF13C6B1B70AEC40092892F /* HTMLParser.h */,
+				BEF13C6C1B70AEC40092892F /* HTMLParser.m */,
+			);
+			name = HTMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,6 +420,7 @@
 				BE209C671B2D95EC00161783 /* User.m in Sources */,
 				BE209C571B2D4C4400161783 /* TabBarController.m in Sources */,
 				BE209C5F1B2D4D1600161783 /* TopicTableViewCell.m in Sources */,
+				BEA0AD0E1B705C9600DFA2F1 /* HTMLAnalyzer.m in Sources */,
 				BE209C5A1B2D4C6700161783 /* SelfViewController.m in Sources */,
 				BE209C251B2D48C100161783 /* AppDelegate.m in Sources */,
 				BE209C4E1B2D4BB800161783 /* DiscoverViewController.m in Sources */,
@@ -383,8 +429,11 @@
 				BE209C641B2D7EA000161783 /* Question.m in Sources */,
 				BE209C221B2D48C100161783 /* main.m in Sources */,
 				BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */,
+				BEF13C6E1B70AEC40092892F /* HTMLParser.m in Sources */,
 				BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */,
 				BE209C4B1B2D4B9D00161783 /* TopicViewController.m in Sources */,
+				BEF13C6D1B70AEC40092892F /* HTMLNode.m in Sources */,
+				BE3DD81A1B6F76F6007E1221 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +561,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RegExCategories\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = ZhiHu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,6 +581,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONKit\"",
+					"\"${PODS_ROOT}/Headers/Public/RegExCategories\"",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = ZhiHu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
