@@ -21,16 +21,19 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - JSONKit (1.4)
-  - RegExCategories (1.0)
+  - MBProgressHUD (0.9.1)
+  - SVPullToRefresh (0.4.1)
 
 DEPENDENCIES:
   - AFNetworking
   - JSONKit
-  - RegExCategories
+  - MBProgressHUD (~> 0.9.1)
+  - SVPullToRefresh
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   JSONKit: 5b69e804ea54d99293eed0fd2ce596c5703fefb0
-  RegExCategories: e68befacacd5bda853c88f70ec745cb2d0cfb89c
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
 COCOAPODS: 0.38.2

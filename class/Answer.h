@@ -18,6 +18,12 @@
 
 @property NSString *AnswerText;
 
+@property NSString *AnswerShort;
+
+@property NSString *AnswerURL;
+
 @property NSDictionary *Replys;
+
+-(Answer *)initWithURL:(NSString *)url AndShort:(NSString *)answer;
 
 @end

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "class/TopicViewController.m"
-            timestampString = "460349484.048586"
+            timestampString = "461326958.12486"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "@implementation TopicViewController"
             landmarkType = "3">
          </BreakpointContent>

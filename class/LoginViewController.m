@@ -40,7 +40,7 @@
     [manager.requestSerializer setValue:@"http://www.zhihu.com" forHTTPHeaderField:@"Referer"];
     //[manager.requestSerializer setValue:@"XMLHttpRequest" forHTTPHeaderField:@"X-Requested-With"];
     
-    NSDictionary *parameters=@{@"email":_EmailTextLabel.text,@"password":_PasswordTextLabel.text};
+    NSDictionary *parameters=@{@"email":@"554771657@qq.com",@"password":@"fage5462057"};
     [manager POST:url_login parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         [self performSelectorOnMainThread:@selector(receiveData:) withObject:responseObject waitUntilDone:YES];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 #import "conf.h"
 
-@interface TopicViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface TopicViewController :BaseViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *TopicTableView;
+
 
 @end

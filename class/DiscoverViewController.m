@@ -8,7 +8,9 @@
 
 #import "DiscoverViewController.h"
 #import "DiscoverTableViewCell.h"
-
+#import "AFNetworking.h"
+#import "HTMLAnalyzer.h"
+#import "conf.h"
 @interface DiscoverViewController ()
 
 @end
@@ -17,38 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initUI];
+
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
--(void)initUI{
-    self.DiscoverTableView.delegate=self;
-    self.DiscoverTableView.dataSource=self;
-}
-
-#pragma mark -Delegate
-
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
-}
-
--(DiscoverTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DiscoverTableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"DiscoverTableViewCell"];
-    if (!cell) {
-        [tableView registerNib:[UINib nibWithNibName:@"DiscoverTableViewCell" bundle:nil] forCellReuseIdentifier:@"DiscoverTableViewCell"];
-        cell=[tableView dequeueReusableCellWithIdentifier:@"DiscoverTableViewCell"];
-    }
-    return cell;
-}
-
--(void)tableView:(UITableView *)tableView willDisplayCell:(DiscoverTableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-}
 
 @end

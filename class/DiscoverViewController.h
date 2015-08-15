@@ -10,7 +10,7 @@
 
 @interface DiscoverViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *HotSgmControl;
 
-@property (weak, nonatomic) IBOutlet UITableView *DiscoverTableView;
 
 @end

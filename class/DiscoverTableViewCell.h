@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Answer.h"
 
 @interface DiscoverTableViewCell : UITableViewCell
 
@@ -14,4 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *AnswerTitle;
 
+@property Answer *MyAnswer;
+-(void)initUIFromAnswer:(Answer *)answer;
 @end

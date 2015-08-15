@@ -14,6 +14,11 @@
     // Initialization code
 }
 
+-(void)initUIFromAnswer:(Answer *)answer{
+    _MyAnswer=answer;
+    _AnswerTitle=answer;
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

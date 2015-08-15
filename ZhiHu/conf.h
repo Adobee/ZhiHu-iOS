@@ -11,6 +11,7 @@
 
 #define url_login @"http://www.zhihu.com/login/email"
 #define url_topic @"http://www.zhihu.com/topic"
-#define url_explore @"http://www.zhihu.com/explore"
+#define url_explore_daily @"http://www.zhihu.com/explore#daily-hot"
+#define url_explore_month @"http://www.zhihu.com/explore#monthly-hot"
 
 #endif

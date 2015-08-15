@@ -10,7 +10,10 @@
 
 @interface HTMLAnalyzer : NSObject
 
++(NSMutableArray *)Analysis:(NSString *)HTMLString WithIdentifier:(NSString *)identifier;
 
 +(NSMutableArray *)TopicsAnalysis:(NSString *)HTMLString;
+
++(NSMutableArray *)DiscoverAnalysis:(NSString *)HTMLString;
 
 @end

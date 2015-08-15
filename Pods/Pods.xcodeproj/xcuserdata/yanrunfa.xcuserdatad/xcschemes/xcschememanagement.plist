@@ -14,12 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>RegExCategories.xcscheme</key>
+		<key>SVPullToRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B095F0189B2FAF41FE3DBC59FCB228B</key>
+		<key>80AA9D03B212C24DDCCD2C64073624EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>96A52EA079E7B8A9BAD676750DFAE784</key>
+		<key>CD78932B0A455F9A4D6B2D2B7FDD7172</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2FCD25FC6BD6565532C9829336CF989</key>
+		<key>D10AFCBBC3949030D56276226438BB24</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3977CCFF584C38A1836D1A9D823D272</key>
+		<key>E258993D3353B80FC5895D118188F214</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2D7D7E11FAB0342D3AD7AD9B1D600F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

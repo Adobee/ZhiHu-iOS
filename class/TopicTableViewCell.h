@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MyTopic.h"
 #import "Question.h"
+#import "BaseTableViewCell.h"
 
-@interface TopicTableViewCell : UITableViewCell
+@interface TopicTableViewCell :BaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *TopicImageView;
 
@@ -24,5 +25,4 @@
 
 @property MyTopic *topic;
 
--(void)initUIFromTopic:(MyTopic *)topic;
 @end

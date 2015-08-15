@@ -28,6 +28,8 @@
 		BE209C6F1B2D9B1700161783 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C6D1B2D9B1700161783 /* DiscoverTableViewCell.xib */; };
 		BE209C731B2D9FB000161783 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE209C711B2D9FB000161783 /* NewsTableViewCell.m */; };
 		BE209C741B2D9FB000161783 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */; };
+		BE3692DD1B7F2D7D00CDD69E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3692DC1B7F2D7D00CDD69E /* BaseViewController.m */; };
+		BE3692E11B7F305B00CDD69E /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3692E01B7F305B00CDD69E /* BaseTableViewCell.m */; };
 		BE3DD81A1B6F76F6007E1221 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DD8191B6F76F6007E1221 /* LoginViewController.m */; };
 		BEA0AD0E1B705C9600DFA2F1 /* HTMLAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */; };
 		BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC59C501B3478C100EDA61F /* MyTopic.m */; };
@@ -86,6 +88,10 @@
 		BE209C701B2D9FB000161783 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsTableViewCell.h; path = class/NewsTableViewCell.h; sourceTree = "<group>"; };
 		BE209C711B2D9FB000161783 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsTableViewCell.m; path = class/NewsTableViewCell.m; sourceTree = "<group>"; };
 		BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewsTableViewCell.xib; path = class/NewsTableViewCell.xib; sourceTree = "<group>"; };
+		BE3692DB1B7F2D7D00CDD69E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = class/BaseViewController.h; sourceTree = "<group>"; };
+		BE3692DC1B7F2D7D00CDD69E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = class/BaseViewController.m; sourceTree = "<group>"; };
+		BE3692DF1B7F305B00CDD69E /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewCell.h; path = class/BaseTableViewCell.h; sourceTree = "<group>"; };
+		BE3692E01B7F305B00CDD69E /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewCell.m; path = class/BaseTableViewCell.m; sourceTree = "<group>"; };
 		BE3DD8181B6F76F6007E1221 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = class/LoginViewController.h; sourceTree = "<group>"; };
 		BE3DD8191B6F76F6007E1221 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = class/LoginViewController.m; sourceTree = "<group>"; };
 		BEA0AD0C1B705C9600DFA2F1 /* HTMLAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLAnalyzer.h; path = class/HTMLAnalyzer.h; sourceTree = "<group>"; };
@@ -221,6 +227,8 @@
 				BE209C561B2D4C4400161783 /* TabBarController.m */,
 				BE3DD8181B6F76F6007E1221 /* LoginViewController.h */,
 				BE3DD8191B6F76F6007E1221 /* LoginViewController.m */,
+				BE3692DB1B7F2D7D00CDD69E /* BaseViewController.h */,
+				BE3692DC1B7F2D7D00CDD69E /* BaseViewController.m */,
 			);
 			name = TopViewController;
 			sourceTree = "<group>";
@@ -237,6 +245,8 @@
 				BE209C701B2D9FB000161783 /* NewsTableViewCell.h */,
 				BE209C711B2D9FB000161783 /* NewsTableViewCell.m */,
 				BE209C721B2D9FB000161783 /* NewsTableViewCell.xib */,
+				BE3692DF1B7F305B00CDD69E /* BaseTableViewCell.h */,
+				BE3692E01B7F305B00CDD69E /* BaseTableViewCell.m */,
 			);
 			name = VIewCell;
 			sourceTree = "<group>";
@@ -416,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE3692E11B7F305B00CDD69E /* BaseTableViewCell.m in Sources */,
+				BE3692DD1B7F2D7D00CDD69E /* BaseViewController.m in Sources */,
 				BE209C6E1B2D9B1700161783 /* DiscoverTableViewCell.m in Sources */,
 				BE209C671B2D95EC00161783 /* User.m in Sources */,
 				BE209C571B2D4C4400161783 /* TabBarController.m in Sources */,

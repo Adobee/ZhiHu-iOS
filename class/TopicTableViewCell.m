@@ -15,8 +15,8 @@
 }
 
 
--(void)initUIFromTopic:(MyTopic *)topic{
-    _topic=topic;
+-(void)initUIFromContent:(id)content{
+    _topic=(MyTopic *)content;
     [_TopicButton setTitle:_topic.TopicTitle forState:UIControlStateNormal];
     Question *one,*two,*three;
     if ([_topic.NewQuestions objectAtIndex:0])

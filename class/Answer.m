@@ -10,4 +10,12 @@
 
 @implementation Answer
 
+-(Answer *)initWithURL:(NSString *)url AndShort:(NSString *)answer{
+    if (self=[super init]) {
+        _AnswerShort = answer;
+        _AnswerURL   = url;
+    }
+    return self;
+}
+
 @end

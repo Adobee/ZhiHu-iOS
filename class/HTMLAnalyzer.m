@@ -7,11 +7,22 @@
 //
 
 #import "HTMLAnalyzer.h"
-#import "RegExCategories.h"
 #import "HTMLParser.h"
 #import "MyTopic.h"
 #import "Question.h"
+#import "Answer.h"
 @implementation HTMLAnalyzer
+
+
++(NSMutableArray *)Analysis:(NSString *)HTMLString WithIdentifier:(NSString *)identifier{
+    if ([identifier isEqualToString:@"TopicTableViewCell"]) {
+        return [self TopicsAnalysis:HTMLString];
+    }
+    if ([identifier isEqualToString:@"DiscoverTableViewCell"]) {
+        return [self DiscoverAnalysis:HTMLString];
+    }
+    return nil;
+}
 
 +(NSMutableArray *)TopicsAnalysis:(NSString *)HTMLString{
     NSMutableArray *topics=[[NSMutableArray alloc]init];
@@ -71,4 +82,23 @@
     return topics;
 }
 
++(NSMutableArray *)DiscoverAnalysis:(NSString *)HTMLString{
+    NSMutableArray *discovers=[[NSMutableArray alloc]init];
+    
+    HTMLParser *parser=[[HTMLParser alloc]initWithString:HTMLString error:nil];
+    HTMLNode *rootNode=[parser body];
+    
+    NSArray *hotAnswerNodes=[rootNode findChildrenOfClass:@"explore-feed feed-item"];
+    
+    for (HTMLNode *hotAnswerNode in hotAnswerNodes) {
+        HTMLNode *answer=[hotAnswerNode findChildOfClass:@"question_link"];
+        NSString *answerURL = [answer getAttributeNamed:@"href"];
+        NSString *answerShort = [[hotAnswerNode findChildOfClass:@"zh-summary summary clearfix"] contents];
+        Answer *myAnswer=[[Answer alloc]initWithURL:answerURL AndShort:answerShort];
+        
+        NSString *questionTitle=[answer contents];
+        
+    }
+    return discovers;
+}
 @end
