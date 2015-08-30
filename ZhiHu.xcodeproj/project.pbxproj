@@ -31,6 +31,7 @@
 		BE3692DD1B7F2D7D00CDD69E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3692DC1B7F2D7D00CDD69E /* BaseViewController.m */; };
 		BE3692E11B7F305B00CDD69E /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3692E01B7F305B00CDD69E /* BaseTableViewCell.m */; };
 		BE3DD81A1B6F76F6007E1221 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE3DD8191B6F76F6007E1221 /* LoginViewController.m */; };
+		BE60B3B51B88B81500B3BEF5 /* ImageProcesser.m in Sources */ = {isa = PBXBuildFile; fileRef = BE60B3B41B88B81500B3BEF5 /* ImageProcesser.m */; };
 		BEA0AD0E1B705C9600DFA2F1 /* HTMLAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */; };
 		BEC59C511B3478C100EDA61F /* MyTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC59C501B3478C100EDA61F /* MyTopic.m */; };
 		BEF13C6D1B70AEC40092892F /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF13C6A1B70AEC40092892F /* HTMLNode.m */; };
@@ -94,6 +95,8 @@
 		BE3692E01B7F305B00CDD69E /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewCell.m; path = class/BaseTableViewCell.m; sourceTree = "<group>"; };
 		BE3DD8181B6F76F6007E1221 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = class/LoginViewController.h; sourceTree = "<group>"; };
 		BE3DD8191B6F76F6007E1221 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = class/LoginViewController.m; sourceTree = "<group>"; };
+		BE60B3B31B88B81500B3BEF5 /* ImageProcesser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageProcesser.h; path = class/ImageProcesser.h; sourceTree = "<group>"; };
+		BE60B3B41B88B81500B3BEF5 /* ImageProcesser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageProcesser.m; path = class/ImageProcesser.m; sourceTree = "<group>"; };
 		BEA0AD0C1B705C9600DFA2F1 /* HTMLAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTMLAnalyzer.h; path = class/HTMLAnalyzer.h; sourceTree = "<group>"; };
 		BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTMLAnalyzer.m; path = class/HTMLAnalyzer.m; sourceTree = "<group>"; };
 		BEC59C4E1B344D0100EDA61F /* conf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
@@ -264,6 +267,8 @@
 				BEC59C501B3478C100EDA61F /* MyTopic.m */,
 				BEA0AD0C1B705C9600DFA2F1 /* HTMLAnalyzer.h */,
 				BEA0AD0D1B705C9600DFA2F1 /* HTMLAnalyzer.m */,
+				BE60B3B31B88B81500B3BEF5 /* ImageProcesser.h */,
+				BE60B3B41B88B81500B3BEF5 /* ImageProcesser.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 			files = (
 				BE3692E11B7F305B00CDD69E /* BaseTableViewCell.m in Sources */,
 				BE3692DD1B7F2D7D00CDD69E /* BaseViewController.m in Sources */,
+				BE60B3B51B88B81500B3BEF5 /* ImageProcesser.m in Sources */,
 				BE209C6E1B2D9B1700161783 /* DiscoverTableViewCell.m in Sources */,
 				BE209C671B2D95EC00161783 /* User.m in Sources */,
 				BE209C571B2D4C4400161783 /* TabBarController.m in Sources */,

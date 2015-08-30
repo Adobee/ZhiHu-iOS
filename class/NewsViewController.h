@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface NewsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
-@property (weak, nonatomic) IBOutlet UITableView *NewsTableView;
-
+#import "BaseViewController.h"
+#import "conf.h"
+@interface NewsViewController :BaseViewController
 
 @end

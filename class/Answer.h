@@ -12,18 +12,20 @@
 @interface Answer : NSObject
 
 
-@property User *Replyer;
+@property (strong, nonatomic) User *Replyer;
 
-@property NSString *Time;
+@property (copy, nonatomic) NSString *Time;
 
-@property NSString *AnswerText;
+@property (copy, nonatomic) NSString *Text;
 
-@property NSString *AnswerShort;
+@property (copy, nonatomic) NSString *Short;
 
-@property NSString *AnswerURL;
+@property (copy, nonatomic) NSString *URL;
 
-@property NSDictionary *Replys;
+@property (nonatomic, retain) NSMutableArray *Replys;
 
--(Answer *)initWithURL:(NSString *)url AndShort:(NSString *)answer;
+@property (copy, nonatomic) NSString *Vote;
+
+- (instancetype)initWithURL:(NSString *)url Short:(NSString *)answer;
 
 @end

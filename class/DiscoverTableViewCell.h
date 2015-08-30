@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Answer.h"
+#import "BaseTableViewCell.h"
+#import "Question.h"
 
-@interface DiscoverTableViewCell : UITableViewCell
+@interface DiscoverTableViewCell :BaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *QuestionTitle;
 
 @property (weak, nonatomic) IBOutlet UIButton *AnswerTitle;
 
-@property Answer *MyAnswer;
--(void)initUIFromAnswer:(Answer *)answer;
+@property (strong, nonatomic) Question *MyQuestion;
+
 @end

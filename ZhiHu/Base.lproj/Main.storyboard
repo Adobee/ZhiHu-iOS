@@ -72,11 +72,14 @@
                                                 <segment title="今日最热"/>
                                                 <segment title="本月最热"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="segmentControl:" destination="9pv-A4-QxB" eventType="valueChanged" id="TsJ-BR-xWE"/>
+                                            </connections>
                                         </segmentedControl>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pw9-g7-BUX">
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pw9-g7-BUX">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -94,7 +97,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="发现" image="first" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="DiscoverTableView" destination="pw9-g7-BUX" id="ZYU-RJ-pI3"/>
                         <outlet property="HotSgmControl" destination="AvT-Th-eWN" id="ddr-Dg-zup"/>
                     </connections>
                 </viewController>
@@ -120,7 +122,7 @@
                                     <navigationItem title="动态" id="vke-lK-kE1"/>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QO6-vK-hlC">
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QO6-vK-hlC">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -137,9 +139,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="动态" image="second" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="NewsTableView" destination="QO6-vK-hlC" id="OQb-fm-KcF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

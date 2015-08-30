@@ -10,7 +10,15 @@
 
 @interface User : NSObject
 
-@property NSString *UserName;
+@property (copy, nonatomic) NSString *Name;
 
+@property (copy, nonatomic) NSString *URL;
 
+@property (copy, nonatomic) NSString *Motto;
+
+@property (copy, nonatomic) NSString *ImageURL;
+
+- (instancetype) initWithName:(NSString *)name Motto:(NSString *)motto URL:(NSString *)url;
+
+- (instancetype) initWithName:(NSString *)name URL:(NSString *)url ImageURL:(NSString *)imageURL;
 @end

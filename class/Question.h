@@ -8,20 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import "User.h"
-
+#import "Answer.h"
 @interface Question : NSObject
 
-@property NSString *QuestionTitle;
+@property (copy,nonatomic) NSString *Title;
 
-@property NSString *QuestionText;
+@property (copy,nonatomic) NSString *Text;
 
-@property NSString *QuestionURL;
+@property (copy,nonatomic) NSString *URL;
 
-@property User *Asker;
-
-@property NSDictionary *Answers;
+@property (copy,nonatomic) NSMutableArray *Answers;
 
 
--(Question *)initWithTitle:(NSString *)title andURL:(NSString *)url;
+- (instancetype)initWithTitle:(NSString *)title URL:(NSString *)url;
 
+- (void)addAnswer:(Answer *)answer;
+
+- (Answer *)firstAnswer;
 @end

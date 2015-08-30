@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewCell.h"
+#import "Question.h"
+#import "Answer.h"
 
-@interface NewsTableViewCell : UITableViewCell
+@interface NewsTableViewCell :BaseTableViewCell
 
 @property (weak, nonatomic) IBOutlet UIButton *NewserImageView;
 
@@ -18,4 +21,9 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *AnswerButton;
 
+@property (strong, nonatomic) Question *MyQuestion;
+
+@property (strong, nonatomic) Answer *MyAnswer;
+
+@property (strong, nonatomic) User *Replyer;
 @end

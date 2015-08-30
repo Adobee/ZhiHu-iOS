@@ -11,15 +11,15 @@
 
 @interface MyTopic : NSObject
 
-@property NSString *TopicTitle;
+@property (copy, nonatomic) NSString *Title;
 
-@property NSString *TopicURL;
+@property (copy, nonatomic) NSString *URL;
 
-@property NSString *TopicImageURL;
+@property (copy, nonatomic) NSString *ImageURL;
 
-@property NSMutableArray *NewQuestions;
+@property (nonatomic, retain) NSMutableArray *NewQuestions;
 
--(MyTopic *)initWithTitle:(NSString *)title andURL:(NSString *)url andImage:(NSString *)imageUrl;
+-(MyTopic *)initWithTitle:(NSString *)title URL:(NSString *)url Image:(NSString *)imageUrl;
 
 -(void)addQuestion:(Question *)question;
 

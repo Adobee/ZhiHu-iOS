@@ -10,12 +10,13 @@
 
 @implementation Answer
 
--(Answer *)initWithURL:(NSString *)url AndShort:(NSString *)answer{
+-(instancetype)initWithURL:(NSString *)url Short:(NSString *)answer{
     if (self=[super init]) {
-        _AnswerShort = answer;
-        _AnswerURL   = url;
+        _Short = [answer stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+        _URL   = [@"http://www.zhihu.com" stringByAppendingString:url];
     }
     return self;
 }
+
 
 @end

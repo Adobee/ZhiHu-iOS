@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) NSString *url;
 
+-(void)initData;
+
 @end

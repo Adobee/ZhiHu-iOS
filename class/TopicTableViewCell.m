@@ -8,7 +8,7 @@
 
 #import "TopicTableViewCell.h"
 #import "AFNetworking.h"
-
+#import "ImageProcesser.h"
 @implementation TopicTableViewCell
 
 - (void)awakeFromNib {
@@ -17,28 +17,30 @@
 
 -(void)initUIFromContent:(id)content{
     _topic=(MyTopic *)content;
-    [_TopicButton setTitle:_topic.TopicTitle forState:UIControlStateNormal];
+    [_TopicButton setTitle:_topic.Title forState:UIControlStateNormal];
     Question *one,*two,*three;
-    if ([_topic.NewQuestions objectAtIndex:0])
+    if ([_topic.NewQuestions count]>=1)
         one=[_topic.NewQuestions objectAtIndex:0];
-    if ([_topic.NewQuestions objectAtIndex:1])
+    if ([_topic.NewQuestions count]>=2)
         two=[_topic.NewQuestions objectAtIndex:1];
-    if ([_topic.NewQuestions objectAtIndex:2])
+    if ([_topic.NewQuestions count]>=3)
         three=[_topic.NewQuestions objectAtIndex:2];
     switch (_topic.NewQuestions.count) {
         case 1:
-            [_NewsOneButton setTitle:one.QuestionTitle forState:UIControlStateNormal];
+            [_NewsOneButton setTitle:one.Title forState:UIControlStateNormal];
         case 2:
-            [_NewsOneButton setTitle:one.QuestionTitle forState:UIControlStateNormal];
-            [_NewsTwoButton setTitle:two.QuestionTitle forState:UIControlStateNormal];
+            [_NewsOneButton setTitle:one.Title forState:UIControlStateNormal];
+            [_NewsTwoButton setTitle:two.Title forState:UIControlStateNormal];
         case 3:
-            [_NewsOneButton setTitle:one.QuestionTitle forState:UIControlStateNormal];
-            [_NewsTwoButton setTitle:two.QuestionTitle forState:UIControlStateNormal];
-            [_NewsThreeButton setTitle:three.QuestionTitle forState:UIControlStateNormal];
+            [_NewsOneButton setTitle:one.Title forState:UIControlStateNormal];
+            [_NewsTwoButton setTitle:two.Title forState:UIControlStateNormal];
+            [_NewsThreeButton setTitle:three.Title forState:UIControlStateNormal];
         default:
             break;
     }
-    [self getImageFromURL];
+    [ImageProcesser getImageFromURL:_topic.ImageURL Then:^(UIImage *image) {
+        [_TopicImageView setImage:image];
+    }];
 }
 
 //下载话题图片
@@ -54,7 +56,7 @@
      */
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSData *imageData=[[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:_topic.TopicImageURL]];
+        NSData *imageData=[[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:_topic.ImageURL]];
         UIImage *image=[[UIImage alloc]initWithData:imageData];
         dispatch_async(dispatch_get_main_queue(), ^{
             [_TopicImageView setImage:image];

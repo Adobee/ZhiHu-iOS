@@ -11,6 +11,7 @@
 #import "MyTopic.h"
 #import "Question.h"
 #import "Answer.h"
+#import "User.h"
 @implementation HTMLAnalyzer
 
 
@@ -20,6 +21,9 @@
     }
     if ([identifier isEqualToString:@"DiscoverTableViewCell"]) {
         return [self DiscoverAnalysis:HTMLString];
+    }
+    if ([identifier isEqualToString:@"NewsTableViewCell"]) {
+        return [self NewsAnalysis:HTMLString];
     }
     return nil;
 }
@@ -41,7 +45,7 @@
         NSString *topicURL       = [topic getAttributeNamed:@"href"];
         HTMLNode *topicImageNode = [rootNode findChildWithAttribute:@"href" matchingName:topicURL allowPartial:YES];
         NSString *topicImageURL  = [[topicImageNode findChildTag:@"img"] getAttributeNamed:@"src"];
-        MyTopic *myTopic         = [[MyTopic alloc]initWithTitle:topicTitle andURL:topicURL andImage:topicImageURL];
+        MyTopic *myTopic         = [[MyTopic alloc]initWithTitle:topicTitle URL:topicURL Image:topicImageURL];
         
         //初始化Question
         NSArray *questionNodes = [topicNode findChildrenOfClass:@"topic-feed-item"];
@@ -49,36 +53,11 @@
             HTMLNode *question      = [questionNode findChildTag:@"a"];
             NSString *questionTitle = [question contents];
             NSString *questionURL   = [question getAttributeNamed:@"href"];
-            Question *myQuestion    = [[Question alloc]initWithTitle:questionTitle andURL:questionURL];
+            Question *myQuestion    = [[Question alloc]initWithTitle:questionTitle URL:questionURL];
             [myTopic addQuestion:myQuestion];
         }
         [topics addObject:myTopic];
     }
-    
-    /*
-    NSString *topicNumFragment=[HTMLString firstMatch:RX(@"<span class=\"follow-topics-count\">\\d+</span>")];
-    int topicNum=[[topicNumFragment firstMatch:RX(@"\\d+")] intValue];
-    NSLog(@"%d",topicNum);
-    
-    NSArray *topicsFragments=[HTMLString matches:RX(@"<div class=\"topic-item-content\">[\\s\\S]*</div>")];
-    for (NSString *s in topicsFragments) {
-        NSLog(@"%@",s);
-    }
-     */
-    /*
-    TFHpple *htmlTree=[[TFHpple alloc]initWithHTMLData: HTMLData];
-    NSArray *searchResult=[htmlTree searchWithXPathQuery:@"//span[@class='follow-topics-count']"];
-    if ([searchResult count]==1) {
-        TFHppleElement *element=searchResult[0];
-         topic_num=[[element text] intValue];
-    }
-    
-    NSArray *topics=[htmlTree searchWithXPathQuery:@"//div[@class='topic-item-content']"];
-    for (int i=0; i<topic_num; i++) {
-        TFHppleElement *element=topics[i];
-        NSArray *children=[element childrenWithTagName:@"a"];
-    }
-     */
     return topics;
 }
 
@@ -91,14 +70,70 @@
     NSArray *hotAnswerNodes=[rootNode findChildrenOfClass:@"explore-feed feed-item"];
     
     for (HTMLNode *hotAnswerNode in hotAnswerNodes) {
-        HTMLNode *answer=[hotAnswerNode findChildOfClass:@"question_link"];
-        NSString *answerURL = [answer getAttributeNamed:@"href"];
-        NSString *answerShort = [[hotAnswerNode findChildOfClass:@"zh-summary summary clearfix"] contents];
-        Answer *myAnswer=[[Answer alloc]initWithURL:answerURL AndShort:answerShort];
-        
-        NSString *questionTitle=[answer contents];
-        
+        //初始化问题
+        HTMLNode *question      = [hotAnswerNode findChildOfClass:@"question_link"];
+        NSString *questionURL   = [question getAttributeNamed:@"href"];
+        NSString *questionTitle = [question contents];
+        Question* myQuestion    = [[Question alloc]initWithTitle:questionTitle URL:questionURL];
+        //初始化回答
+        HTMLNode *answer        = [hotAnswerNode findChildOfClass:@"zh-summary summary clearfix"];
+        NSArray *answerText     = [answer findChildTags:@"text"];
+        NSString *answerShort   = @"";
+        for (HTMLNode* textNode in answerText)
+            answerShort=[NSString stringWithFormat:@"%@%@",answerShort,[textNode allContents]];
+        NSString *answerURL     = [[answer findChildTag:@"a"] getAttributeNamed:@"href"];
+        Answer *myAnswer        = [[Answer alloc]initWithURL:answerURL Short:answerShort];
+        //初始化回答的人
+        HTMLNode *people        = [hotAnswerNode findChildOfClass:@"zm-item-answer-author-wrap"];
+        NSString *peopleName    = [[people findChildTag:@"a"] contents];
+        NSString *peopleMotto   = [[people findChildOfClass:@"zu-question-my-bio"] contents];
+        NSString *peopleURL     = [[people findChildTag:@"a"] getAttributeNamed:@"href"];
+        User     *user          = [[User alloc]initWithName:peopleName Motto:peopleMotto URL:peopleURL];
+        //添加关系
+        [myAnswer setReplyer:user];
+        [myQuestion addAnswer:myAnswer];
+        [discovers addObject:myQuestion];
     }
     return discovers;
+}
+
+
++ (NSMutableArray *)NewsAnalysis:(NSString *)HTMLString{
+    NSMutableArray *news = [[NSMutableArray alloc]init];
+    HTMLParser *parser=[[HTMLParser alloc]initWithString:HTMLString error:nil];
+    HTMLNode *rootNode=[parser body];
+
+    NSArray *newsNodes = [rootNode findChildrenOfClass:@"feed-item folding feed-item-hook feed-item-a\n\n"];
+    for (HTMLNode* newsNode in newsNodes) {
+        //初始化回答的人
+        HTMLNode *people         = [newsNode findChildOfClass:@"zm-item-link-avatar"];
+        NSString *peopleName     = [people getAttributeNamed:@"title"];
+        NSString *peopleURL      = [people getAttributeNamed:@"href"];
+        NSString *peopleImageURL = [[people findChildTag:@"img"] getAttributeNamed:@"src"];
+        User *user               = [[User alloc]initWithName:peopleName URL:peopleURL ImageURL:peopleImageURL];
+        //初始化问题
+        HTMLNode *question      = [newsNode findChildOfClass:@"question_link"];
+        NSString *questionURL   = [question getAttributeNamed:@"href"];
+        NSString *questionTitle = [question contents];
+        Question* myQuestion    = [[Question alloc]initWithTitle:questionTitle URL:questionURL];
+        //初始化回答
+        HTMLNode *answer        = [newsNode findChildOfClass:@"zh-summary summary clearfix"];
+        NSArray *answerText     = [answer findChildTags:@"text"];
+        NSString *answerShort   = @"";
+        for (HTMLNode* textNode in answerText)
+            answerShort=[NSString stringWithFormat:@"%@%@",answerShort,[textNode allContents]];
+        NSString *answerURL     = [[newsNode findChildOfClass:@"answer-date-link meta-item"] getAttributeNamed:@"href"];
+        if (!answerURL) {
+            answerURL = [[newsNode findChildOfClass:@"answer-date-link last_updated meta-item"] getAttributeNamed:@"href"];
+        }
+        Answer *myAnswer        = [[Answer alloc]initWithURL:answerURL Short:answerShort];
+        
+        //添加关系
+        [myAnswer setReplyer:user];
+        [myQuestion addAnswer:myAnswer];
+        [news addObject:myQuestion];
+    }
+    return news;
+    
 }
 @end

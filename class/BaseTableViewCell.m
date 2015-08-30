@@ -10,8 +10,6 @@
 
 @implementation BaseTableViewCell
 
--(void) initUIFromContent:(id)content{
-    
-}
+
 
 @end

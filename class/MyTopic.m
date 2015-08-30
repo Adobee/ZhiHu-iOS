@@ -11,12 +11,12 @@
 @implementation MyTopic
 
 
--(MyTopic *)initWithTitle:(NSString *)title andURL:(NSString *)url andImage:(NSString *)imageUrl{
+-(MyTopic *)initWithTitle:(NSString *)title URL:(NSString *)url Image:(NSString *)imageUrl{
     if (self=[super init]) {
         _NewQuestions  = [[NSMutableArray alloc]init];
-        _TopicTitle    = title;
-        _TopicImageURL = imageUrl;
-        _TopicURL      = [@"www.zhihu.com" stringByAppendingString:url];
+        _Title    = title;
+        _ImageURL = imageUrl;
+        _URL      = [@"www.zhihu.com" stringByAppendingString:url];
     }
     return self;
 }

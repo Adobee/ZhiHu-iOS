@@ -10,12 +10,22 @@
 
 @implementation Question
 
--(Question *)initWithTitle:(NSString *)title andURL:(NSString *)url{
+- (instancetype)initWithTitle:(NSString *)title URL:(NSString *)url{
     if (self=[super init]) {
-        _QuestionTitle = title;
-        _QuestionURL   = [@"http://www.zhihu.com" stringByAppendingString:url];
+        _Title = title;
+        _URL   = [@"http://www.zhihu.com" stringByAppendingString:url];
     }
     return self;
 }
 
+- (void)addAnswer:(Answer *)answer{
+    if (!_Answers) {
+        _Answers=[[NSMutableArray alloc]init];
+    }
+    [_Answers addObject:answer];
+}
+
+- (Answer *)firstAnswer{
+    return [_Answers objectAtIndex:0];
+}
 @end

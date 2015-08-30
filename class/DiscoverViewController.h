@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface DiscoverViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface DiscoverViewController :BaseViewController
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *HotSgmControl;
 
+- (IBAction)segmentControl:(id)sender;
 
 @end
